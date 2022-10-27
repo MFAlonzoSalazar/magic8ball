@@ -1,0 +1,67 @@
+body{
+   text-align: center;
+}
+
+.eight-ball{
+    width:50vh;
+    height: 50vh;
+}
+
+.bg-dark {
+    background-color: #141414 !important;
+}
+
+.inner-circle {
+    background-color: black;
+    border: 1px white;
+    width: 50%;
+    height: 50%;
+}
+
+.triangle{
+    color: white;
+    font-size: large;
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(100% 0, 0 0, 50% 100%); 
+}
+
+.answers{
+    text-align: center;
+    margin: 0px 35px 35px 35px;
+    width: 130px
+}
+
+.animate-shake {
+    animation: shaking 1s 3;
+}
+
+.fade-in {
+    animation: fadeIn 3s;
+}
+
+.fade-out {
+    animation: fadeOut 3s;
+}
+
+@keyframes shaking {
+    0% { transform: translateX(0) translateY(0)}
+    25% { transform: translateX(10px) translateY(5px)}
+    50% { transform: translateX(-10px) translateY(-5px) }
+    75% { transform: translateX(10px) translateY(5px) }
+    100% { transform: translateX(0) translateY(0)}
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+ 
