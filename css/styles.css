@@ -1,9 +1,9 @@
-body{
-   text-align: center;
+body {
+    text-align: center;
 }
 
-.eight-ball{
-    width:50vh;
+.eight-ball {
+    width: 50vh;
     height: 50vh;
 }
 
@@ -18,16 +18,23 @@ body{
     height: 50%;
 }
 
-.triangle{
+.triangle {
     color: white;
-    font-size: large;
     background-color: blue;
-    width: 150px;
-    height: 150px;
-    clip-path: polygon(100% 0, 0 0, 50% 100%); 
+    width: 65%;
+    height: 80%;
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
 }
 
-.answers{
+.font-size {
+    font-size: 80%;
+}
+
+button {
+    text-align: center;
+}
+
+.answers {
     text-align: center;
     margin: 0px 35px 35px 35px;
     width: 130px
@@ -46,22 +53,43 @@ body{
 }
 
 @keyframes shaking {
-    0% { transform: translateX(0) translateY(0)}
-    25% { transform: translateX(10px) translateY(5px)}
-    50% { transform: translateX(-10px) translateY(-5px) }
-    75% { transform: translateX(10px) translateY(5px) }
-    100% { transform: translateX(0) translateY(0)}
+    0% {
+        transform: translateX(0) translateY(0)
+    }
+
+    25% {
+        transform: translateX(10px) translateY(5px)
+    }
+
+    50% {
+        transform: translateX(-10px) translateY(-5px)
+    }
+
+    75% {
+        transform: translateX(10px) translateY(5px)
+    }
+
+    100% {
+        transform: translateX(0) translateY(0)
+    }
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
-
-
- 
